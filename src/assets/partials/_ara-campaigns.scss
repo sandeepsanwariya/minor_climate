@@ -1,0 +1,1002 @@
+// ARA Campaign Page
+
+.horizontal-timeline {
+  li {
+    padding: var(--padding);
+
+    time {
+      font-size: 5rem;
+      font-weight: bold;
+      opacity: 0.2;
+    }
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    li {
+      h2 {
+        font-size: 2.4rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  @media (min-width: $laptop) {
+    li {
+    }
+  }
+}
+
+.article.campaign {
+  .entry-header {
+    position: relative;
+    border: solid var(--padding) white;
+    border-top: solid 4rem white;
+    padding: 0;
+    background-size: cover;
+
+    .text {
+      padding: var(--padding);
+      background: rgba(255, 255, 255, 0.7);
+
+      h1,
+      p {
+        position: relative;
+        z-index: 9;
+        margin-top: 0;
+      }
+      h1 {
+        margin-bottom: var(--padding);
+      }
+      p {
+        font-weight: bold;
+      }
+      .cta {
+        margin-top: 4rem;
+      }
+    }
+  }
+  &.climate-change .entry-header {
+    background-image: url("../assets/img/climate-change/polar-bear-from-above-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/polar-bear-from-above-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/polar-bear-from-above-full.jpg");
+    }
+  }
+
+  &.climate-change .entry-header.climate-change-Florida {
+    background-image: url("../assets/img/climate-change/sea-level-rise-florida-protest-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-florida-protest-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-florida-protest-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Miami {
+    background-image: url("../assets/img/climate-change/sea-level-rise-miami-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-miami-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-miami-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Venice {
+    background-image: url("../assets/img/climate-change/sea-level-rise-venice-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-venice-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-venice-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Louisiana {
+    background-image: url("../assets/img/climate-change/sea-level-rise-louisiana-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-louisiana-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-louisiana-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-New-Orleans {
+    background-image: url("../assets/img/climate-change/sea-level-rise-new-orleans-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-new-orleans-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-new-orleans-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-London {
+    background-image: url("../assets/img/climate-change/sea-level-rise-london-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-london-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-london-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-The-Hague {
+    background-image: url("../assets/img/climate-change/sea-level-rise-the-hague-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-the-hague-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-the-hague-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Amsterdam {
+    background-image: url("../assets/img/climate-change/sea-level-rise-amsterdam-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-amsterdam-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-amsterdam-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Montreal {
+    background-image: url("../assets/img/climate-change/sea-level-rise-montreal-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-montreal-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-montreal-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-New-York-City {
+    background-image: url("../assets/img/climate-change/sea-level-rise-new-york-city-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-new-york-city-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-new-york-city-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-San-Francisco {
+    background-image: url("../assets/img/climate-change/sea-level-rise-san-francisco-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-san-francisco-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-san-francisco-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Virginia-Beach {
+    background-image: url("../assets/img/climate-change/sea-level-rise-virginia-beach-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-virginia-beach-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-virginia-beach-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Houston {
+    background-image: url("../assets/img/climate-change/sea-level-rise-houston-texas-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-houston-texas-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-houston-texas-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Corpus-Christi {
+    background-image: url("../assets/img/climate-change/sea-level-rise-corpus-christi-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-corpus-christi-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-corpus-christi-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Charleston-South-Carolina {
+    background-image: url("../assets/img/climate-change/sea-level-rise-charleston-south-carolina-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-charleston-south-carolina-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-charleston-south-carolina-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Boston-Massachuesets {
+    background-image: url("../assets/img/climate-change/sea-level-rise-Boston-Massachusetts-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-Boston-Massachusetts-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-Boston-Massachusetts-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Atlantic-City-New-Jersey {
+    background-image: url("../assets/img/climate-change/sea-level-rise-atlantic-city-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-atlantic-city-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-atlantic-city-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Norfolk-VA {
+    background-image: url("../assets/img/climate-change/sea-level-rise-norfolk-va-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-norfolk-va-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-norfolk-va-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Hawaii {
+    background-image: url("../assets/img/climate-change/sea-level-rise-hawaii-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-hawaii-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-hawaii-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Tokyo {
+    background-image: url("../assets/img/climate-change/sea-level-rise-tokyo-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-tokyo-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-tokyo-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Kolkota {
+    background-image: url("../assets/img/climate-change/sea-level-rise-kolkota-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-kolkota-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-kolkota-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Bristol {
+    background-image: url("../assets/img/climate-change/sea-level-rise-bristol-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-bristol-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-bristol-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Exmouth {
+    background-image: url("../assets/img/climate-change/sea-level-rise-exmouth-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-exmouth-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-exmouth-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Exeter {
+    background-image: url("../assets/img/climate-change/sea-level-rise-exeter-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-exeter-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-exeter-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Portsmouth {
+    background-image: url("../assets/img/climate-change/sea-level-rise-portsmouth-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-portsmouth-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-portsmouth-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Southampton {
+    background-image: url("../assets/img/climate-change/sea-level-rise-map-southampton-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-map-southampton-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-map-southampton-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Plymouth {
+    background-image: url("../assets/img/climate-change/sea-level-rise-plymouth-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-plymouth-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-plymouth-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Weymouth {
+    background-image: url("../assets/img/climate-change/sea-level-rise-weymouth-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-weymouth-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-weymouth-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Delaware {
+    background-image: url("../assets/img/climate-change/sea-level-rise-delaware-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-delaware-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-delaware-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Redwood-City-CA {
+    background-image: url("../assets/img/climate-change/sea-level-rise-redwood-city-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-redwood-city-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-redwood-city-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Wales {
+    background-image: url("../assets/img/climate-change/sea-level-rise-wales-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-wales-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-wales-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Swansea {
+    background-image: url("../assets/img/climate-change/sea-level-rise-swansea-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-swansea-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-swansea-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Newport {
+    background-image: url("../assets/img/climate-change/sea-level-rise-newport-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-newport-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-newport-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Cardiff {
+    background-image: url("../assets/img/climate-change/sea-level-rise-cardiff-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-cardiff-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-cardiff-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Cornwall {
+    background-image: url("../assets/img/climate-change/sea-level-rise-map-cornwall-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-map-cornwall-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-map-cornwall-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Devon {
+    background-image: url("../assets/img/climate-change/sea-level-rise-devon-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-devon-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-devon-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-Hong-Kong {
+    background-image: url("../assets/img/climate-change/sea-level-rise-hong-kong-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-hong-kong-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-hong-kong-full.jpg");
+    }
+  }
+  &.climate-change .entry-header.climate-change-shanghai {
+    background-image: url("../assets/img/climate-change/sea-level-rise-shanghai-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-shanghai-full.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/climate-change/sea-level-rise-shanghai-full.jpg");
+    }
+  }
+  &.amazon-deforestation {
+    .entry-header {
+      background-image: url("../assets/img/amazon/amazon-rainforest-deforestation.jpg");
+
+      @media (min-width: 768px) {
+        background-image: url("../assets/img/amazon/amazon-rainforest-deforestation.jpg");
+      }
+      @media (min-width: 1024px) {
+        background-image: url("../assets/img/amazon/amazon-rainforest-deforestation.jpg");
+      }
+      h1,
+      p {
+        color: $primary;
+      }
+    }
+  }
+  &.california-wildfires .entry-header {
+    background-image: url("../assets/img/california-wildfires/webp/helicopter-768.webp");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/california-wildfires/webp/helicopter-1024.webp");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/california-wildfires/webp/helicopter-1440.webp");
+    }
+  }
+  &.beers .entry-header {
+    background-image: url("../assets/img/businesses/beer_header_thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/businesses/beer_header.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/businesses/beer_header.jpg");
+    }
+  }
+  &.electric-cars .entry-header {
+    background-image: url("../assets/img/businesses/electric_cars_header_thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/businesses/electric_cars_header.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/businesses/electric_cars_header.jpg");
+    }
+  }
+  &.sustainable-banks .entry-header {
+    background-image: url("../assets/img/businesses/sustainable_banks_header_thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/businesses/sustainable_banks_header.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/businesses/sustainable_banks_header.jpg");
+    }
+  }
+  &.electricity .entry-header {
+    background-image: url("../assets/img/businesses/electricity/renewable-energy-wind-turbines-thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/businesses/electricity/renewable-energy-wind-turbines.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/businesses/electricity/renewable-energy-wind-turbines.jpg");
+    }
+  }
+  &.broadband .entry-header {
+    background-image: url("../assets/img/businesses/broadband_header_thumb.jpg");
+
+    @media (min-width: $tablet) {
+      background-image: url("../assets/img/businesses/broadband_header.jpg");
+    }
+    @media (min-width: $laptop) {
+      background-image: url("../assets/img/businesses/broadband_header.jpg");
+    }
+  }
+  
+  &.about {
+    .entry-header {
+      background: black;
+
+      h1 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+  .country-selector {
+    p {
+      color: $light-text;
+      display: inline-block;
+      margin: 0 1rem 0 0;
+    }
+    div {
+      display: inline-block;
+    }
+  }
+  .methodology {
+    padding: var(--padding);
+  }
+  .entry-content {
+    .story {
+      section {
+        margin-bottom: var(--padding);
+
+        picture {
+          max-height: 100%;
+          overflow: hidden;
+          position: relative;
+
+          img {
+            width: 100%;
+            bottom: var(--padding);
+          }
+        }
+        .l6 {
+          position: relative;
+
+          .text {
+            h2 {
+              //font-size: 3rem;
+
+              time {
+                display: block;
+                font-size: 200%;
+                opacity: 0.4;
+              }
+            }
+            p {
+              &:last-of-type {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .parallax {
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+
+        &:last-child {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          position: relative;
+          animation: fadeIn 1.5s ease-in-out;
+        }
+      }
+    }
+    .emm-cta {
+      header {
+        padding: var(--padding);
+
+        h2 {
+          //@include headline;
+        }
+      }
+    }
+  }
+  .news-sentiment {
+    table {
+      thead {
+        td {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+.save-the-world-components {
+  header {
+    .c {
+      padding: var(--padding);
+
+      @media (min-width: $tablet) {
+        padding: var(--padding) 0;
+      }
+    }
+  }
+  section section {
+    padding: var(--padding);
+    background: $data-bg;
+
+    .hero-level {
+      h3 {
+        margin-top: 0;
+        color: grey;
+
+        strong {
+          display: block;
+          color: black;
+        }
+      }
+    }
+    &:nth-of-type(even) {
+      background: $data-bg2;
+    }
+    h4 {
+      margin: 0 0 1rem 0;
+    }
+    .meta {
+      margin: 2rem 0;
+      font-size: 1.6rem;
+
+      li {
+        display: inline-block;
+        margin-right: 2rem;
+        padding-left: 2rem;
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 0.8rem;
+          height: 0.8rem;
+          background: $primary;
+          margin-top: -0.4rem;
+          border-radius: 50%;
+        }
+      }
+    }
+    .cta a {
+      font-size: 2.4rem;
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+.help {
+  @include hidden;
+}
+
+@media (min-width: $tablet) {
+  .article.campaign {
+    .entry-header {
+      min-height: 100vh;
+
+      .logo {
+        position: absolute;
+        right: var(--padding);
+        bottom: var(--padding);
+        width: 50%;
+        z-index: 99;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .methodology {
+    div {
+      div:nth-child(odd) {
+        padding-right: 2rem;
+      }
+      div:nth-child(even) {
+        padding-left: 2rem;
+      }
+    }
+  }
+}
+@media (min-width: $laptop) {
+  .article.campaign {
+    .entry-content {
+      .story {
+        section {
+          padding: var(--padding);
+
+          .l6 {
+            .text {
+              padding-right: var(--padding);
+
+              h2 {
+                //font-size: 6rem;
+              }
+            }
+          }
+          &.decade-2,
+          &.decade-4,
+          &.decade-6,
+          &.decade-8,
+          &.decade-10 {
+            //picture {
+            //  order: 2;
+            //}
+            .l6 {
+              .text {
+                padding-left: var(--padding);
+                padding-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: $laptop) and (min-height: 800px) {
+  .article.campaign {
+    .entry-content {
+      .story {
+        section {
+          position: relative;
+          min-height: 100vh;
+
+          .text {
+            position: absolute;
+            bottom: var(--padding);
+          }
+          picture {
+            img {
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: $desktop) and (min-height: 700px) {
+  .article.campaign {
+    .entry-content {
+      .story {
+        section {
+          .text {
+            h2 {
+              //font-size: 7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Mouse scroll animation */
+.mouse_scroll {
+  display: block;
+  width: 24px;
+  height: 100px;
+  margin-top: 125px;
+  position: relative;
+  z-index: 9;
+}
+.m_scroll_arrows {
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+
+  border-right: 2px solid $primary;
+  border-bottom: 2px solid $primary;
+  margin: 0 0 3px 4px;
+
+  width: 16px;
+  height: 16px;
+}
+.unu {
+  margin-top: 1px;
+}
+.unu,
+.doi,
+.trei {
+  -webkit-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+}
+.unu {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-direction: alternate;
+
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+.doi {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-direction: alternate;
+
+  animation-delay: 0.2s;
+  animation-direction: alternate;
+
+  margin-top: -6px;
+}
+
+.trei {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-direction: alternate;
+
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid $primary;
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: $primary;
+  position: relative;
+
+  height: 4px;
+  width: 4px;
+  border: 2px solid $primary;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+@-o-keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+@keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,79 @@
+@mixin hidden() {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -9999;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+@mixin visible() {
+  visibility: visible;
+  opacity: 1;
+  z-index: 9;
+  height: auto;
+  overflow: visible;
+}
+
+// Standard page/post/category header: This is used on the single post and on the category
+.entry-header,
+.category-header {
+  padding: var(--padding);
+  padding-top: 18vh;
+
+  h1 {
+    @include headline;
+  }
+}
+
+// These are used in the article entry header and in the article list
+.category-link,
+.publish-date {
+  font-size: 1.8rem;
+  margin-right: var(--padding-small);
+  margin-bottom: var(--padding-small);
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+body {
+  padding: $gutter;
+}
+
+// The first viewport often has one large picture with standard padding
+.high-impact-viewport {
+  padding: 4rem var(--padding) var(--padding) var(--padding);
+}
+
+.close,
+.close-button {
+  position: absolute;
+  right: var(--padding-small);
+  top: var(--padding-small);
+  width: 3rem;
+  height: 3rem;
+  text-indent: -5000px;
+  background: none;
+  border: none;
+
+  &:before,
+  &:after {
+    content: "";
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 3rem;
+    height: 0.2rem;
+    background: $primary;
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.site-footer {
+  padding: var(--padding-small);
+}

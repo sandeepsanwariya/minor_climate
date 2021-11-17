@@ -1,0 +1,55 @@
+.entry-content {
+  .business-rankings {
+    section {
+      border-bottom: solid 1px $line;
+      padding-bottom: var(--padding);
+      margin-bottom: var(--padding);
+
+      h2 {
+        span {
+          display: block;
+          font-size: 50%;
+          text-transform: uppercase;
+        }
+      }
+
+      .key-facts {
+        margin: 0;
+        padding: 0;
+        font-size: 3rem;
+        list-style: none;
+        font-weight: bold;
+
+        li {
+          margin: 0 0 2rem 0;
+
+          small {
+            display: block;
+            font-size: 60%;
+            opacity: 70%;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .entry-content {
+    .business-rankings {
+      .key-facts {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+@media (min-width: $desktop) {
+  .entry-content {
+    .business-rankings {
+      .key-facts {
+        font-size: 6rem;
+      }
+    }
+  }
+}

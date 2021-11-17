@@ -1,0 +1,184 @@
+// Media Monitor
+
+main.media-monitor {
+    article {
+        .entry-header {
+            background: $primary url(/assets/img/media_monitor.jpg);
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-size: 5rem;
+                color: $light-text;
+            }
+            p {
+                font-size: 2rem;
+                color: $light-text;
+            }
+        }
+        .sentiment-grid {
+            background: $primary;
+
+            header {
+                padding: var(--padding-small);
+                text-align: center;
+                
+                h2 {
+                    @include headline;
+                    color: $light-text;
+                    margin: 0 auto;
+                }
+                p {
+                    color: $light-text;
+                }
+            }
+            li {
+                padding: var(--padding-small);
+                margin: 0;
+
+                .score {
+                    background: $light-text;
+                    padding: 1rem;
+
+                    h3{
+                        margin: 0;
+                        color: $primary;
+                    }
+                    p {
+                        margin: 0;
+                        color: $primary;
+                    }
+                    .chart {
+
+                    }
+                }
+                .help {
+                    @include hidden;
+                }
+            }
+        }
+        .topics-sentiment {
+            background: $light-text;
+
+            header {
+                padding: var(--padding);
+
+                h2 {
+                    @include headline;
+                    color: $primary;
+
+                    small {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.quick-stats {
+    ul {
+
+        li {
+            padding: var(--padding);
+
+            p {
+                font-size: 2.1rem;
+
+                small {
+                    display: block;
+                    font-size: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+    main.media-monitor {
+        article {
+            .entry-header {
+                height: 100vh;
+
+                h1 {
+                    font-size: 7rem;
+                }
+                p {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+    .quick-stats {
+        ul {
+            
+            li {
+                p {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+}
+@media (min-width: $laptop) {
+    main.media-monitor {
+        article {
+            .entry-header {
+                h1 {
+                    font-size: 9rem;
+                }
+                p {
+                    font-size: 3.3rem;
+                }
+            }
+        }
+    }
+    .quick-stats {
+        ul {
+            
+            li {
+                p {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+@media (min-width: $desktop) {
+    main.media-monitor {
+        article {
+            .entry-header {
+                h1 {
+                    font-size: 12rem;
+                }
+                p {
+                    font-size: 3.6rem;
+                }
+            }
+        }
+    }
+    .quick-stats {
+        ul {
+            
+            li {
+                p {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+}
+@media (min-width: $desktop-xl) {
+    main.media-monitor {
+        article {
+            .entry-header {
+                h1 {
+                    font-size: 14rem;
+                }
+            }
+        }
+    }
+}

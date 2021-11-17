@@ -1,0 +1,60 @@
+// Theme Sales Page
+
+.theme-sales-page {
+    .single-feature {
+        
+        .text {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -25%;
+            z-index: 9;
+            text-align: center;
+            padding-top: 10vh;
+
+            h1 {
+                font-size: 3rem;
+                color: $light-text;
+
+                strong {
+                    display: block;
+                    font-size: 150%;
+                }
+            }
+            p {
+                color: $light-text;
+            }
+        }
+        
+    }
+}
+
+@media (min-width: $tablet) {
+    .theme-sales-page {
+        .single-feature {
+            
+            .text {
+    
+                h1 {
+                    font-size: 5rem;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (min-width: $laptop) {
+    .theme-sales-page {
+        .single-feature {
+            
+            .text {
+    
+                h1 {
+                    font-size: 7rem;
+                }
+            }
+            
+        }
+    }
+}

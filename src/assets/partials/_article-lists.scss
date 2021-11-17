@@ -1,0 +1,57 @@
+// Article Lists
+
+.article-list {
+  li {
+    //padding-bottom: var(--padding);
+
+    article {
+      img {
+        width: 100%;
+      }
+      span {
+        font-size: 2.4rem;
+        font-weight: bold;
+
+        small {
+          display: block;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  &.horizontal-list {
+    li {
+      article {
+        border: solid 0.5rem white;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .article-list {
+    margin: 0.5rem -0.5rem;
+
+    &.vertical-list {
+        li {
+          padding-bottom: var(--padding-small);
+
+        .image {
+          padding-right: var(--padding-small);
+        }
+        h2 {
+          @include headline;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $laptop) {
+  .article-list {
+    li {
+      h3 {
+      }
+    }
+  }
+}

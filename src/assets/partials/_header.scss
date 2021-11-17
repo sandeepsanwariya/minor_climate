@@ -1,0 +1,166 @@
+// Site Header
+
+#root {
+  overflow: hidden;
+}
+
+.site-header {
+  //background: rgba(0,0,0,0.8);
+  padding: 1.5rem var(--padding);
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+
+  .site-logo {
+    width: 15rem;
+    z-index: 9999;
+
+    a {
+      display: block;
+
+      img {
+        display: block;
+      }
+    }
+
+    @media (min-width: $laptop) {
+      width: 16rem;
+    }
+  }
+  .menu-toggle {
+    position: fixed;
+    top: 0em;
+    right: 0rem;
+    background: rgba(255, 255, 255, 0.9);
+    width: 4.5rem;
+    height: 4.5rem;
+    cursor: pointer;
+    text-indent: -500000px;
+    z-index: 999;
+
+    @media (min-width: $tablet) {
+      width: 5rem;
+      height: 5rem;
+    }
+    @media (min-width: $desktop) {
+      width: 6rem;
+      height: 6rem;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 1rem;
+      top: 1.5rem;
+      right: 1rem;
+      height: 2px;
+      background: black;
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 48%;
+      bottom: 1.5rem;
+      left: 1rem;
+      right: 1rem;
+      border-top: solid 2px black;
+      border-bottom: solid 2px black;
+    }
+  }
+  nav {
+    position: fixed;
+    background: #f7f7f7;
+    z-index: 9999;
+    height: 100vh;
+    top: 0;
+    left: 100%;
+    right: -100%;
+    bottom: 0;
+    overflow: scroll;
+    box-shadow: 0 0 5rem 0 rgb(0 0 0 / 20%);
+    transition: right 0.3s ease-in-out;
+
+    h2 {
+      font-size: 11rem;
+      margin: 0;
+      padding: var(--padding) var(--padding) 0rem var(--padding);
+      line-height: 7rem;
+      color: #f7f7f7;
+      background: $data-bg2;
+      text-indent: -0.5rem;
+    }
+    ul {
+      li {
+        a {
+          display: block;
+          padding: 1rem 0;
+          transition: all 0.4s ease-in-out;
+          border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+          border-top: solid 1px white;
+
+          &:hover {
+            background: white;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: $laptop) {
+    nav {
+      width: 45rem;
+      right: -45rem;
+      left: auto;
+    }
+  }
+}
+#menu-bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0,0,0,0.7);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.menu-open {
+  overflow: hidden;
+
+  span#menu-bg {
+    left: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  .site-header {
+    nav {
+      right: 0;
+      left: 0;
+
+      @media (min-width: $laptop) {
+        left: auto;
+      }
+    }
+    .menu-toggle {
+      z-index: 99999;
+
+      &:before {
+        left: 1rem;
+        top: 2.5rem;
+        transform: rotate(45deg);
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        left: 1rem;
+        top: 2.5rem;
+        right: 1rem;
+        height: 2px;
+        background: black;
+        border: none;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

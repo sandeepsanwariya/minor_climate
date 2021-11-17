@@ -1,0 +1,2739 @@
+@charset "UTF-8";
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -9999;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  z-index: 9;
+  height: auto;
+}
+
+/* Mobile only content */
+/* Desktop only content */
+/* Article */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+body, ul, ol, dl, p, figure {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --grid-adjust: -1rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --grid-adjust: -2rem;
+  }
+}
+@media (min-width: 1366px) {
+  :root {
+    --grid-adjust: -3rem;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --grid-adjust: -4rem;
+  }
+}
+:root {
+  --padding-small: 1rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --padding-small: 2rem;
+  }
+}
+@media (min-width: 1366px) {
+  :root {
+    --padding-small: 3rem;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --padding-small: 4rem;
+  }
+}
+:root {
+  --padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --padding: 3rem;
+  }
+}
+@media (min-width: 1366px) {
+  :root {
+    --padding: 4rem;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --padding: 5rem;
+  }
+}
+:root {
+  --padding-large: 4rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --padding-large: 6rem;
+  }
+}
+@media (min-width: 1366px) {
+  :root {
+    --padding-large: 8rem;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --padding-large: 10rem;
+  }
+}
+.headline,
+.business-rankings h2 {
+  width: 800px;
+  max-width: 100%;
+  margin-top: 0;
+  font-size: 4rem;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .headline,
+.business-rankings h2 {
+    font-size: 4.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .headline,
+.business-rankings h2 {
+    font-size: 5.4rem;
+  }
+}
+@media (min-width: 1366px) {
+  .headline,
+.business-rankings h2 {
+    font-size: 7rem;
+  }
+}
+@media (min-width: 1366px) and (min-height: 800px) {
+  .headline,
+.business-rankings h2 {
+    font-size: 9rem;
+  }
+}
+
+.mega-headline {
+  margin-top: 0;
+  font-size: 5rem;
+}
+@media (min-width: 768px) {
+  .mega-headline {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .mega-headline {
+    font-size: 7rem;
+  }
+}
+@media (min-width: 1366px) {
+  .mega-headline {
+    font-size: 9rem;
+  }
+}
+@media (min-width: 1366px) and (min-height: 800px) {
+  .mega-headline {
+    font-size: 12rem;
+  }
+}
+
+.subhead,
+.business-rankings h3,
+.product-tables h2 {
+  /*width: 800px;
+    max-width: 100%;
+    font: bold 2.4rem/1.2 Jost;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto 2.4rem auto;*/
+  font: bold 2.4rem/1.2 Jost;
+}
+@media (min-width: 1024px) {
+  .subhead,
+.business-rankings h3,
+.product-tables h2 {
+    font-size: 3.6em;
+  }
+}
+@media (min-width: 1366px) {
+  .subhead,
+.business-rankings h3,
+.product-tables h2 {
+    font-size: 4em;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 1rem "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.035em;
+  line-height: 1;
+  color: #050031;
+}
+
+p,
+ul,
+ol,
+dl,
+input,
+button,
+label,
+blockquote,
+textarea,
+select,
+table {
+  font-size: 1.8rem;
+  color: #050031;
+}
+@media (min-width: 1366px) {
+  p,
+ul,
+ol,
+dl,
+input,
+button,
+label,
+blockquote,
+textarea,
+select,
+table {
+    font-size: 2.1rem;
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin: 0 0 2.5rem 0;
+}
+p a {
+  text-decoration: underline;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Calls to actions / CTAs / Buttons */
+.cta a,
+button.cta,
+.button {
+  background: #050031;
+  color: white;
+  font-family: "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  text-decoration: none;
+  background: #050031;
+  color: white;
+  font-weight: bold;
+  padding: 0.2rem 0.8rem;
+  cursor: pointer;
+  display: inline-block;
+}
+.cta a.on-dark,
+button.cta.on-dark,
+.button.on-dark {
+  background: white;
+  color: #050031;
+}
+
+.cta.with-icon a,
+.button.with-icon {
+  padding: 1rem 5rem 1rem 1rem;
+  position: relative;
+  display: inline-block;
+  border: none;
+}
+.cta.with-icon a:after,
+.button.with-icon:after {
+  content: "";
+  border-left: solid 1rem white;
+  border-top: solid 0.8rem transparent;
+  border-bottom: solid 0.8rem transparent;
+  right: 1.5rem;
+  top: 50%;
+  margin-top: -0.75rem;
+  position: absolute;
+}
+.cta.with-icon a.with-pulsing-icon:after,
+.button.with-icon.with-pulsing-icon:after {
+  animation-name: pulse;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+.line-through {
+  text-decoration: line-through;
+}
+
+.entry-header,
+.category-header {
+  padding: var(--padding);
+  padding-top: 18vh;
+}
+.entry-header h1,
+.category-header h1 {
+  width: 800px;
+  max-width: 100%;
+  margin-top: 0;
+  font-size: 4rem;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .entry-header h1,
+.category-header h1 {
+    font-size: 4.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .entry-header h1,
+.category-header h1 {
+    font-size: 5.4rem;
+  }
+}
+@media (min-width: 1366px) {
+  .entry-header h1,
+.category-header h1 {
+    font-size: 7rem;
+  }
+}
+@media (min-width: 1366px) and (min-height: 800px) {
+  .entry-header h1,
+.category-header h1 {
+    font-size: 9rem;
+  }
+}
+
+.category-link,
+.publish-date {
+  font-size: 1.8rem;
+  margin-right: var(--padding-small);
+  margin-bottom: var(--padding-small);
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  padding: 0rem;
+}
+
+.high-impact-viewport {
+  padding: 4rem var(--padding) var(--padding) var(--padding);
+}
+
+.close,
+.close-button {
+  position: absolute;
+  right: var(--padding-small);
+  top: var(--padding-small);
+  width: 3rem;
+  height: 3rem;
+  text-indent: -5000px;
+  background: none;
+  border: none;
+}
+.close:before, .close:after,
+.close-button:before,
+.close-button:after {
+  content: "";
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 3rem;
+  height: 0.2rem;
+  background: #050031;
+}
+.close:after,
+.close-button:after {
+  transform: rotate(-45deg);
+}
+
+.site-footer {
+  padding: var(--padding-small);
+}
+
+/* Phone cells */
+/* tablet cells */
+/* Laptop cells */
+/* Desktop cells */
+/* Offsets */
+/* Grid classes */
+.grid {
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.x {
+  display: flex;
+  flex-flow: row wrap;
+}
+.x .c {
+  flex: 0 0 auto;
+  min-height: 0px;
+  min-width: 0px;
+  width: 100%;
+}
+.x .p6 {
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .x .t2 {
+    width: 16.6666666667%;
+  }
+}
+@media (min-width: 768px) {
+  .x .t3 {
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .x .t4 {
+    width: 33.3333333%;
+  }
+}
+@media (min-width: 768px) {
+  .x .t6 {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .x .t7 {
+    width: 58.333333333%;
+  }
+}
+@media (min-width: 768px) {
+  .x .t8 {
+    width: 66.6666666667%;
+  }
+}
+@media (min-width: 768px) {
+  .x .t9 {
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .x .t10 {
+    width: 83.333333333%;
+  }
+}
+@media (min-width: 768px) {
+  .x .t12 {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .x .l2 {
+    width: 16.6666666667%;
+  }
+}
+@media (min-width: 1024px) {
+  .x .l4 {
+    width: 33.3333333%;
+  }
+}
+@media (min-width: 1024px) {
+  .x .l5 {
+    width: 41.6666666667%;
+  }
+}
+@media (min-width: 1024px) {
+  .x .l6 {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .x .l7 {
+    width: 58.333333333%;
+  }
+}
+@media (min-width: 1024px) {
+  .x .l8 {
+    width: 66.6666666667%;
+  }
+}
+@media (min-width: 1024px) {
+  .x .l10 {
+    width: 83.333333333%;
+  }
+}
+@media (min-width: 1024px) {
+  .x .l12 {
+    width: 100%;
+  }
+}
+@media (min-width: 1366px) {
+  .x .d3 {
+    width: 25%;
+  }
+}
+@media (min-width: 1920px) {
+  .x .dxl3 {
+    width: 25%;
+  }
+}
+.x .i6 {
+  margin-left: 50%;
+}
+
+.article-list li article img {
+  width: 100%;
+}
+.article-list li article span {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.article-list li article span small {
+  display: block;
+  font-weight: normal;
+}
+.article-list.horizontal-list li article {
+  border: solid 0.5rem white;
+}
+
+@media (min-width: 768px) {
+  .article-list {
+    margin: 0.5rem -0.5rem;
+  }
+  .article-list.vertical-list li {
+    padding-bottom: var(--padding-small);
+  }
+  .article-list.vertical-list li .image {
+    padding-right: var(--padding-small);
+  }
+  .article-list.vertical-list li h2 {
+    width: 800px;
+    max-width: 100%;
+    margin-top: 0;
+    font-size: 4rem;
+    line-height: 1;
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .article-list.vertical-list li h2 {
+    font-size: 4.8rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .article-list.vertical-list li h2 {
+    font-size: 5.4rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1366px) {
+  .article-list.vertical-list li h2 {
+    font-size: 7rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1366px) and (min-height: 800px) {
+  .article-list.vertical-list li h2 {
+    font-size: 9rem;
+  }
+}
+/* Buttons */
+button,
+input[type=submit] {
+  background: #050031;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.2em;
+  color: white;
+}
+button b,
+input[type=submit] b {
+  position: relative;
+}
+button b:after,
+input[type=submit] b:after {
+  font: 1em/2.8rem fontawesome;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  color: white;
+}
+button.play, button.pause,
+input[type=submit].play,
+input[type=submit].pause {
+  width: 7rem;
+  height: 4rem;
+  display: inline-block;
+}
+button.play b, button.pause b,
+input[type=submit].play b,
+input[type=submit].pause b {
+  width: 7rem;
+  height: 4rem;
+  display: block;
+  text-indent: -50000px;
+  overflow: hidden;
+  text-align: left;
+}
+button.play b:after, button.pause b:after,
+input[type=submit].play b:after,
+input[type=submit].pause b:after {
+  content: "";
+  line-height: 4rem;
+  font-size: 1.2rem;
+  text-indent: 0;
+}
+button.pause b:after,
+input[type=submit].pause b:after {
+  content: "";
+}
+
+/*Checkboxes*/
+/* Radio buttons */
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+input,
+button,
+select,
+textarea {
+  padding: 1.6rem;
+  outline: none;
+  border: solid 1px #999;
+}
+input:focus,
+button:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+button {
+  padding: 1rem 2rem;
+}
+
+input[type=checkbox] {
+  display: inline-block;
+  border: solid 1px black;
+  margin: 0 1rem 0 0;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin: 0.5rem 1rem 0 0;
+  float: left;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 1rem;
+  border-radius: 0.5rem;
+  padding: 0;
+  background: #a8a8a8;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  background: #050031;
+  cursor: pointer;
+  box-shadow: 0.1rem 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.5);
+}
+.slider::-moz-range-thumb {
+  width: 2rem;
+  height: 2rem;
+  background: #050031;
+  cursor: pointer;
+}
+
+.select-dropdown {
+  position: relative;
+}
+
+#root {
+  overflow: hidden;
+}
+
+.site-header {
+  padding: 1.5rem var(--padding);
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.site-header .site-logo {
+  width: 15rem;
+  z-index: 9999;
+}
+.site-header .site-logo a {
+  display: block;
+}
+.site-header .site-logo a img {
+  display: block;
+}
+@media (min-width: 1024px) {
+  .site-header .site-logo {
+    width: 16rem;
+  }
+}
+.site-header .menu-toggle {
+  position: fixed;
+  top: 0em;
+  right: 0rem;
+  background: rgba(255, 255, 255, 0.9);
+  width: 4.5rem;
+  height: 4.5rem;
+  cursor: pointer;
+  text-indent: -500000px;
+  z-index: 999;
+}
+@media (min-width: 768px) {
+  .site-header .menu-toggle {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media (min-width: 1366px) {
+  .site-header .menu-toggle {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+.site-header .menu-toggle:before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+  right: 1rem;
+  height: 2px;
+  background: black;
+}
+.site-header .menu-toggle:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 48%;
+  bottom: 1.5rem;
+  left: 1rem;
+  right: 1rem;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+}
+.site-header nav {
+  position: fixed;
+  background: #f7f7f7;
+  z-index: 9999;
+  height: 100vh;
+  top: 0;
+  left: 100%;
+  right: -100%;
+  bottom: 0;
+  overflow: scroll;
+  box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+}
+.site-header nav h2 {
+  font-size: 11rem;
+  margin: 0;
+  padding: var(--padding) var(--padding) 0rem var(--padding);
+  line-height: 7rem;
+  color: #f7f7f7;
+  background: rgba(0, 0, 0, 0.1);
+  text-indent: -0.5rem;
+}
+.site-header nav ul li a {
+  display: block;
+  padding: 1rem 0;
+  transition: all 0.4s ease-in-out;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  border-top: solid 1px white;
+}
+.site-header nav ul li a:hover {
+  background: white;
+}
+@media (min-width: 1024px) {
+  .site-header nav {
+    width: 45rem;
+    right: -45rem;
+    left: auto;
+  }
+}
+
+#menu-bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.menu-open {
+  overflow: hidden;
+}
+.menu-open span#menu-bg {
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+.menu-open .site-header nav {
+  right: 0;
+  left: 0;
+}
+@media (min-width: 1024px) {
+  .menu-open .site-header nav {
+    left: auto;
+  }
+}
+.menu-open .site-header .menu-toggle {
+  z-index: 99999;
+}
+.menu-open .site-header .menu-toggle:before {
+  left: 1rem;
+  top: 2.5rem;
+  transform: rotate(45deg);
+}
+.menu-open .site-header .menu-toggle:after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 2.5rem;
+  right: 1rem;
+  height: 2px;
+  background: black;
+  border: none;
+  transform: rotate(-45deg);
+}
+
+:root {
+  --grid-adjust: -1rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --grid-adjust: -2rem;
+  }
+}
+@media (min-width: 1366px) {
+  :root {
+    --grid-adjust: -3rem;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --grid-adjust: -4rem;
+  }
+}
+:root {
+  --padding-small: 1rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --padding-small: 2rem;
+  }
+}
+@media (min-width: 1366px) {
+  :root {
+    --padding-small: 3rem;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --padding-small: 4rem;
+  }
+}
+:root {
+  --padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --padding: 3rem;
+  }
+}
+@media (min-width: 1366px) {
+  :root {
+    --padding: 4rem;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --padding: 5rem;
+  }
+}
+:root {
+  --padding-large: 4rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --padding-large: 6rem;
+  }
+}
+@media (min-width: 1366px) {
+  :root {
+    --padding-large: 8rem;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --padding-large: 10rem;
+  }
+}
+.play-animation {
+  padding: var(--padding);
+  background: rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.play-animation h2,
+.play-animation p {
+  color: white;
+}
+.play-animation p {
+  margin: 0rem 0 4rem 0;
+  width: 800px;
+  max-width: 100%;
+}
+.play-animation button {
+  background: white;
+  font-size: 1.8rem;
+  color: #050031;
+  margin: 0 1rem 0 0;
+}
+.play-animation .range-slider {
+  margin-top: 3rem;
+}
+@media (min-width: 1024px) {
+  .play-animation .range-slider {
+    margin-top: 0;
+    padding-right: 2rem;
+  }
+}
+.play-animation .range-slider input.slider::-webkit-slider-thumb {
+  background: yellow;
+}
+.play-animation .range-slider p {
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+.play-animation:after {
+  content: "";
+  position: absolute;
+  bottom: -3rem;
+  left: 7rem;
+  border-top: solid 3rem #050031;
+  border-left: solid 3rem transparent;
+  border-right: solid 3rem transparent;
+  z-index: 999;
+}
+
+.show-all-toggle p {
+  display: inline-block;
+  margin: 0 2rem 0 0;
+}
+
+.labels .label {
+  font-size: 1.8rem;
+  padding: 0.5rem;
+}
+
+.feature-chart {
+  background: #050031;
+  position: relative;
+}
+.feature-chart .chart-actions {
+  padding: 1rem var(--padding);
+  background: rgba(255, 255, 255, 0.1);
+}
+.feature-chart .chart-actions .country-selector {
+  margin-bottom: 2rem;
+}
+.feature-chart .chart-actions .country-selector select {
+  margin-top: 2rem;
+  padding: 2%;
+  width: 100%;
+}
+.feature-chart .chart-actions .embed-chart p {
+  color: white;
+  margin: 0;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.feature-chart .chart-actions .embed-chart .button {
+  position: relative;
+  font-size: 1.2rem;
+}
+@media (min-width: 768px) {
+  .feature-chart .chart-actions .embed-chart .button {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .feature-chart .chart-actions .embed-chart .button {
+    margin-left: 2rem;
+  }
+}
+.feature-chart .chart-actions .embed-chart .button:after {
+  content: "</>";
+  line-height: 4.8rem;
+  width: 4.6rem;
+  text-align: center;
+  color: yellow;
+  border: none;
+  right: 0;
+  top: 0.5rem;
+}
+.feature-chart .chart-actions .embed-chart .button:hover {
+  background: white;
+  color: #050031;
+}
+.feature-chart .chart-actions .embed-chart .embed-code {
+  background: white;
+}
+.feature-chart .chart-actions .embed-chart .embed-code p {
+  color: #050031;
+  margin-bottom: var(--padding);
+}
+.feature-chart .chart-actions .embed-chart .embed-code textarea {
+  margin-right: var(--padding-small);
+}
+.feature-chart .chart-actions .logo {
+  padding: 1rem 0 0 0;
+}
+
+.popup {
+  background: white;
+  padding: var(--padding);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  overflow: scroll;
+}
+.popup textarea {
+  padding: 0.5rem;
+  color: #888;
+  height: 150px;
+}
+.share {
+  padding: var(--padding);
+}
+.share h3 {
+  color: white;
+  width: 800px;
+  max-width: 100%;
+  margin-top: 0;
+  font-size: 4rem;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .share h3 {
+    font-size: 4.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .share h3 {
+    font-size: 5.4rem;
+  }
+}
+@media (min-width: 1366px) {
+  .share h3 {
+    font-size: 7rem;
+  }
+}
+@media (min-width: 1366px) and (min-height: 800px) {
+  .share h3 {
+    font-size: 9rem;
+  }
+}
+.share ul li {
+  display: inline-block;
+  margin-right: var(--padding-small);
+}
+.share ul li a {
+  display: block;
+  background: url("../assets/img/social-icons.webp");
+  background-position: 0 bottom;
+  background-size: 160px;
+  width: 40px;
+  height: 40px;
+  text-indent: -5000px;
+  overflow: hidden;
+}
+.share ul li.twitter a {
+  background-position: -40px bottom;
+}
+.share ul li.facebook a {
+  background-position: -80px bottom;
+}
+.share ul li.linkedin a {
+  background-position: -120px bottom;
+}
+
+.charts-grid {
+  padding: var(--padding);
+}
+.charts-grid ul li {
+  padding: 1rem;
+}
+.charts-grid ul li a {
+  position: relative;
+  display: block;
+}
+.charts-grid ul li a img {
+  width: 100%;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.charts-grid ul li a span {
+  display: block;
+  position: absolute;
+  height: 2rem;
+  line-height: 2rem;
+  top: 50%;
+  width: 100%;
+  margin-top: -1rem;
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+.charts-grid ul li a:hover span {
+  color: #050031;
+}
+.charts-grid ul li a:hover img {
+  opacity: 1;
+}
+.charts-grid.dark-charts-grid {
+  background: #050031;
+}
+.charts-grid.dark-charts-grid h2 {
+  color: white;
+  text-align: center;
+}
+.charts-grid.dark-charts-grid ul li a {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .charts-grid ul {
+    margin: -1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .charts-grid ul li a span {
+    font-size: 3rem;
+  }
+}
+.custom .leaflet-popup-tip,
+.custom .leaflet-popup-content-wrapper {
+  background: #ffffff;
+  color: #000000;
+  padding: 1px;
+  text-align: center;
+}
+
+#date_value {
+  text-align: left;
+}
+
+.fadded-add {
+  -webkit-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -ms-animation: fadein 1s;
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*       .leaflet-control-attribution{display: none;} */
+.texto-casos {
+  font-size: 100%;
+  font-weight: 100%;
+  color: black;
+  /* Use color, background, set margins for offset, etc */
+}
+
+.article .feature-image img {
+  width: 100%;
+}
+.article .entry-header .publish-date {
+  opacity: 0.4;
+}
+.article .entry-content {
+  padding: var(--padding);
+}
+.article .entry-content section header {
+  text-align: center;
+}
+.article .entry-content p a,
+.article .entry-content ul a,
+.article .entry-content ol a {
+  text-decoration: underline;
+}
+.article .entry-content ul,
+.article .entry-content ol {
+  list-style-position: outside;
+  padding-left: 3rem;
+  margin-bottom: 2.4rem;
+}
+.article .entry-content ul li,
+.article .entry-content ol li {
+  margin-bottom: 1.5;
+}
+.article .entry-content ul {
+  list-style-type: disc;
+}
+.article .entry-content ol {
+  list-style-type: decimal;
+}
+.article .entry-content figure {
+  margin-bottom: 2.4rem;
+}
+.article .entry-content figure figcaption {
+  font-size: 1.6rem;
+  color: #666;
+}
+.article.single .entry-header h1 {
+  margin-top: 0;
+}
+
+@media (min-width: 1024px) {
+  .article .entry-content blockquote.pullquote {
+    float: right;
+    width: 60%;
+    margin: 2rem -30% 3rem 3rem;
+  }
+  .article .entry-content blockquote.pullquote p {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.1rem;
+    position: relative;
+    padding-top: 3rem;
+  }
+  .article .entry-content blockquote.pullquote p:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5rem;
+    height: 1rem;
+    background: #050031;
+  }
+
+  .feature-article .entry-header p.standfirst {
+    font-size: 3rem;
+  }
+  .feature-article .entry-content p {
+    font-size: 2.7rem;
+  }
+}
+.category .article-list {
+  padding: var(--padding);
+}
+
+.article-list li article img {
+  width: 100%;
+}
+.article-list li article span {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.article-list li article span small {
+  display: block;
+  font-weight: normal;
+}
+.article-list.horizontal-list li article {
+  border: solid 0.5rem white;
+}
+
+@media (min-width: 768px) {
+  .article-list {
+    margin: 0.5rem -0.5rem;
+  }
+  .article-list.vertical-list li {
+    padding-bottom: var(--padding-small);
+  }
+  .article-list.vertical-list li .image {
+    padding-right: var(--padding-small);
+  }
+  .article-list.vertical-list li h2 {
+    width: 800px;
+    max-width: 100%;
+    margin-top: 0;
+    font-size: 4rem;
+    line-height: 1;
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .article-list.vertical-list li h2 {
+    font-size: 4.8rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .article-list.vertical-list li h2 {
+    font-size: 5.4rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1366px) {
+  .article-list.vertical-list li h2 {
+    font-size: 7rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1366px) and (min-height: 800px) {
+  .article-list.vertical-list li h2 {
+    font-size: 9rem;
+  }
+}
+main.home .single-feature .text {
+  padding: 0;
+  position: relative;
+  z-index: 9;
+}
+main.home .single-feature img {
+  display: none;
+}
+main.home .top-feature {
+  padding-bottom: 0;
+}
+main.home .latest-features li {
+  margin-bottom: var(--padding);
+}
+main.home .social-media {
+  padding-top: 0;
+}
+
+@media (min-width: 768px) {
+  main.home .single-feature section {
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+  }
+  main.home .single-feature section .text {
+    padding: 4rem 5rem 5rem 4rem;
+  }
+  main.home .single-feature section .text p {
+    font-size: 2.4rem;
+  }
+  main.home .single-feature section .text p.text-cta {
+    font-size: 3.3rem;
+  }
+  main.home .single-feature.social-media .text {
+    background: rgba(255, 255, 255, 0.45);
+  }
+  main.home .single-feature img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+  main.home .latest-features {
+    padding-top: 0rem;
+    padding-bottom: 0;
+  }
+  main.home .latest-features li {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1366px) {
+  main.home .single-feature section .text {
+    padding-left: 6rem;
+  }
+  main.home .single-feature section .text p {
+    font-size: 2.7rem;
+  }
+  main.home .single-feature section .text p.text-cta {
+    font-size: 3.6rem;
+  }
+  main.home .latest-features {
+    padding-top: 0rem;
+  }
+}
+.horizontal-timeline li {
+  padding: var(--padding);
+}
+.horizontal-timeline li time {
+  font-size: 5rem;
+  font-weight: bold;
+  opacity: 0.2;
+}
+.horizontal-timeline li h2 {
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .horizontal-timeline li h2 {
+    font-size: 2.4rem;
+  }
+  .horizontal-timeline li p {
+    font-size: 1.6rem;
+  }
+}
+.article.campaign .entry-header {
+  position: relative;
+  border: solid var(--padding) white;
+  border-top: solid 4rem white;
+  padding: 0;
+  background-size: cover;
+}
+.article.campaign .entry-header .text {
+  padding: var(--padding);
+  background: rgba(255, 255, 255, 0.7);
+}
+.article.campaign .entry-header .text h1,
+.article.campaign .entry-header .text p {
+  position: relative;
+  z-index: 9;
+  margin-top: 0;
+}
+.article.campaign .entry-header .text h1 {
+  margin-bottom: var(--padding);
+}
+.article.campaign .entry-header .text p {
+  font-weight: bold;
+}
+.article.campaign .entry-header .text .cta {
+  margin-top: 4rem;
+}
+.article.campaign.climate-change .entry-header {
+  background-image: url("../assets/img/climate-change/polar-bear-from-above-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header {
+    background-image: url("../assets/img/climate-change/polar-bear-from-above-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header {
+    background-image: url("../assets/img/climate-change/polar-bear-from-above-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Florida {
+  background-image: url("../assets/img/climate-change/sea-level-rise-florida-protest-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Florida {
+    background-image: url("../assets/img/climate-change/sea-level-rise-florida-protest-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Florida {
+    background-image: url("../assets/img/climate-change/sea-level-rise-florida-protest-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Miami {
+  background-image: url("../assets/img/climate-change/sea-level-rise-miami-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Miami {
+    background-image: url("../assets/img/climate-change/sea-level-rise-miami-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Miami {
+    background-image: url("../assets/img/climate-change/sea-level-rise-miami-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Venice {
+  background-image: url("../assets/img/climate-change/sea-level-rise-venice-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Venice {
+    background-image: url("../assets/img/climate-change/sea-level-rise-venice-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Venice {
+    background-image: url("../assets/img/climate-change/sea-level-rise-venice-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Louisiana {
+  background-image: url("../assets/img/climate-change/sea-level-rise-louisiana-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Louisiana {
+    background-image: url("../assets/img/climate-change/sea-level-rise-louisiana-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Louisiana {
+    background-image: url("../assets/img/climate-change/sea-level-rise-louisiana-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-New-Orleans {
+  background-image: url("../assets/img/climate-change/sea-level-rise-new-orleans-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-New-Orleans {
+    background-image: url("../assets/img/climate-change/sea-level-rise-new-orleans-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-New-Orleans {
+    background-image: url("../assets/img/climate-change/sea-level-rise-new-orleans-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-London {
+  background-image: url("../assets/img/climate-change/sea-level-rise-london-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-London {
+    background-image: url("../assets/img/climate-change/sea-level-rise-london-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-London {
+    background-image: url("../assets/img/climate-change/sea-level-rise-london-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-The-Hague {
+  background-image: url("../assets/img/climate-change/sea-level-rise-the-hague-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-The-Hague {
+    background-image: url("../assets/img/climate-change/sea-level-rise-the-hague-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-The-Hague {
+    background-image: url("../assets/img/climate-change/sea-level-rise-the-hague-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Amsterdam {
+  background-image: url("../assets/img/climate-change/sea-level-rise-amsterdam-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Amsterdam {
+    background-image: url("../assets/img/climate-change/sea-level-rise-amsterdam-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Amsterdam {
+    background-image: url("../assets/img/climate-change/sea-level-rise-amsterdam-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Montreal {
+  background-image: url("../assets/img/climate-change/sea-level-rise-montreal-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Montreal {
+    background-image: url("../assets/img/climate-change/sea-level-rise-montreal-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Montreal {
+    background-image: url("../assets/img/climate-change/sea-level-rise-montreal-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-New-York-City {
+  background-image: url("../assets/img/climate-change/sea-level-rise-new-york-city-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-New-York-City {
+    background-image: url("../assets/img/climate-change/sea-level-rise-new-york-city-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-New-York-City {
+    background-image: url("../assets/img/climate-change/sea-level-rise-new-york-city-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-San-Francisco {
+  background-image: url("../assets/img/climate-change/sea-level-rise-san-francisco-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-San-Francisco {
+    background-image: url("../assets/img/climate-change/sea-level-rise-san-francisco-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-San-Francisco {
+    background-image: url("../assets/img/climate-change/sea-level-rise-san-francisco-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Virginia-Beach {
+  background-image: url("../assets/img/climate-change/sea-level-rise-virginia-beach-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Virginia-Beach {
+    background-image: url("../assets/img/climate-change/sea-level-rise-virginia-beach-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Virginia-Beach {
+    background-image: url("../assets/img/climate-change/sea-level-rise-virginia-beach-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Houston {
+  background-image: url("../assets/img/climate-change/sea-level-rise-houston-texas-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Houston {
+    background-image: url("../assets/img/climate-change/sea-level-rise-houston-texas-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Houston {
+    background-image: url("../assets/img/climate-change/sea-level-rise-houston-texas-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Corpus-Christi {
+  background-image: url("../assets/img/climate-change/sea-level-rise-corpus-christi-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Corpus-Christi {
+    background-image: url("../assets/img/climate-change/sea-level-rise-corpus-christi-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Corpus-Christi {
+    background-image: url("../assets/img/climate-change/sea-level-rise-corpus-christi-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Charleston-South-Carolina {
+  background-image: url("../assets/img/climate-change/sea-level-rise-charleston-south-carolina-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Charleston-South-Carolina {
+    background-image: url("../assets/img/climate-change/sea-level-rise-charleston-south-carolina-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Charleston-South-Carolina {
+    background-image: url("../assets/img/climate-change/sea-level-rise-charleston-south-carolina-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Boston-Massachuesets {
+  background-image: url("../assets/img/climate-change/sea-level-rise-Boston-Massachusetts-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Boston-Massachuesets {
+    background-image: url("../assets/img/climate-change/sea-level-rise-Boston-Massachusetts-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Boston-Massachuesets {
+    background-image: url("../assets/img/climate-change/sea-level-rise-Boston-Massachusetts-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Atlantic-City-New-Jersey {
+  background-image: url("../assets/img/climate-change/sea-level-rise-atlantic-city-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Atlantic-City-New-Jersey {
+    background-image: url("../assets/img/climate-change/sea-level-rise-atlantic-city-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Atlantic-City-New-Jersey {
+    background-image: url("../assets/img/climate-change/sea-level-rise-atlantic-city-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Norfolk-VA {
+  background-image: url("../assets/img/climate-change/sea-level-rise-norfolk-va-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Norfolk-VA {
+    background-image: url("../assets/img/climate-change/sea-level-rise-norfolk-va-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Norfolk-VA {
+    background-image: url("../assets/img/climate-change/sea-level-rise-norfolk-va-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Hawaii {
+  background-image: url("../assets/img/climate-change/sea-level-rise-hawaii-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Hawaii {
+    background-image: url("../assets/img/climate-change/sea-level-rise-hawaii-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Hawaii {
+    background-image: url("../assets/img/climate-change/sea-level-rise-hawaii-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Tokyo {
+  background-image: url("../assets/img/climate-change/sea-level-rise-tokyo-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Tokyo {
+    background-image: url("../assets/img/climate-change/sea-level-rise-tokyo-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Tokyo {
+    background-image: url("../assets/img/climate-change/sea-level-rise-tokyo-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Kolkota {
+  background-image: url("../assets/img/climate-change/sea-level-rise-kolkota-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Kolkota {
+    background-image: url("../assets/img/climate-change/sea-level-rise-kolkota-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Kolkota {
+    background-image: url("../assets/img/climate-change/sea-level-rise-kolkota-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Bristol {
+  background-image: url("../assets/img/climate-change/sea-level-rise-bristol-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Bristol {
+    background-image: url("../assets/img/climate-change/sea-level-rise-bristol-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Bristol {
+    background-image: url("../assets/img/climate-change/sea-level-rise-bristol-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Exmouth {
+  background-image: url("../assets/img/climate-change/sea-level-rise-exmouth-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Exmouth {
+    background-image: url("../assets/img/climate-change/sea-level-rise-exmouth-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Exmouth {
+    background-image: url("../assets/img/climate-change/sea-level-rise-exmouth-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Exeter {
+  background-image: url("../assets/img/climate-change/sea-level-rise-exeter-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Exeter {
+    background-image: url("../assets/img/climate-change/sea-level-rise-exeter-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Exeter {
+    background-image: url("../assets/img/climate-change/sea-level-rise-exeter-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Portsmouth {
+  background-image: url("../assets/img/climate-change/sea-level-rise-portsmouth-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Portsmouth {
+    background-image: url("../assets/img/climate-change/sea-level-rise-portsmouth-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Portsmouth {
+    background-image: url("../assets/img/climate-change/sea-level-rise-portsmouth-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Southampton {
+  background-image: url("../assets/img/climate-change/sea-level-rise-map-southampton-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Southampton {
+    background-image: url("../assets/img/climate-change/sea-level-rise-map-southampton-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Southampton {
+    background-image: url("../assets/img/climate-change/sea-level-rise-map-southampton-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Plymouth {
+  background-image: url("../assets/img/climate-change/sea-level-rise-plymouth-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Plymouth {
+    background-image: url("../assets/img/climate-change/sea-level-rise-plymouth-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Plymouth {
+    background-image: url("../assets/img/climate-change/sea-level-rise-plymouth-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Weymouth {
+  background-image: url("../assets/img/climate-change/sea-level-rise-weymouth-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Weymouth {
+    background-image: url("../assets/img/climate-change/sea-level-rise-weymouth-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Weymouth {
+    background-image: url("../assets/img/climate-change/sea-level-rise-weymouth-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Delaware {
+  background-image: url("../assets/img/climate-change/sea-level-rise-delaware-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Delaware {
+    background-image: url("../assets/img/climate-change/sea-level-rise-delaware-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Delaware {
+    background-image: url("../assets/img/climate-change/sea-level-rise-delaware-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Redwood-City-CA {
+  background-image: url("../assets/img/climate-change/sea-level-rise-redwood-city-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Redwood-City-CA {
+    background-image: url("../assets/img/climate-change/sea-level-rise-redwood-city-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Redwood-City-CA {
+    background-image: url("../assets/img/climate-change/sea-level-rise-redwood-city-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Wales {
+  background-image: url("../assets/img/climate-change/sea-level-rise-wales-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Wales {
+    background-image: url("../assets/img/climate-change/sea-level-rise-wales-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Wales {
+    background-image: url("../assets/img/climate-change/sea-level-rise-wales-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Swansea {
+  background-image: url("../assets/img/climate-change/sea-level-rise-swansea-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Swansea {
+    background-image: url("../assets/img/climate-change/sea-level-rise-swansea-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Swansea {
+    background-image: url("../assets/img/climate-change/sea-level-rise-swansea-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Newport {
+  background-image: url("../assets/img/climate-change/sea-level-rise-newport-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Newport {
+    background-image: url("../assets/img/climate-change/sea-level-rise-newport-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Newport {
+    background-image: url("../assets/img/climate-change/sea-level-rise-newport-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Cardiff {
+  background-image: url("../assets/img/climate-change/sea-level-rise-cardiff-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Cardiff {
+    background-image: url("../assets/img/climate-change/sea-level-rise-cardiff-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Cardiff {
+    background-image: url("../assets/img/climate-change/sea-level-rise-cardiff-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Cornwall {
+  background-image: url("../assets/img/climate-change/sea-level-rise-map-cornwall-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Cornwall {
+    background-image: url("../assets/img/climate-change/sea-level-rise-map-cornwall-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Cornwall {
+    background-image: url("../assets/img/climate-change/sea-level-rise-map-cornwall-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Devon {
+  background-image: url("../assets/img/climate-change/sea-level-rise-devon-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Devon {
+    background-image: url("../assets/img/climate-change/sea-level-rise-devon-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Devon {
+    background-image: url("../assets/img/climate-change/sea-level-rise-devon-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-Hong-Kong {
+  background-image: url("../assets/img/climate-change/sea-level-rise-hong-kong-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-Hong-Kong {
+    background-image: url("../assets/img/climate-change/sea-level-rise-hong-kong-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-Hong-Kong {
+    background-image: url("../assets/img/climate-change/sea-level-rise-hong-kong-full.jpg");
+  }
+}
+.article.campaign.climate-change .entry-header.climate-change-shanghai {
+  background-image: url("../assets/img/climate-change/sea-level-rise-shanghai-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.climate-change .entry-header.climate-change-shanghai {
+    background-image: url("../assets/img/climate-change/sea-level-rise-shanghai-full.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.climate-change .entry-header.climate-change-shanghai {
+    background-image: url("../assets/img/climate-change/sea-level-rise-shanghai-full.jpg");
+  }
+}
+.article.campaign.amazon-deforestation .entry-header {
+  background-image: url("../assets/img/amazon/amazon-rainforest-deforestation.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.amazon-deforestation .entry-header {
+    background-image: url("../assets/img/amazon/amazon-rainforest-deforestation.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.amazon-deforestation .entry-header {
+    background-image: url("../assets/img/amazon/amazon-rainforest-deforestation.jpg");
+  }
+}
+.article.campaign.amazon-deforestation .entry-header h1,
+.article.campaign.amazon-deforestation .entry-header p {
+  color: #050031;
+}
+.article.campaign.california-wildfires .entry-header {
+  background-image: url("../assets/img/california-wildfires/webp/helicopter-768.webp");
+}
+@media (min-width: 768px) {
+  .article.campaign.california-wildfires .entry-header {
+    background-image: url("../assets/img/california-wildfires/webp/helicopter-1024.webp");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.california-wildfires .entry-header {
+    background-image: url("../assets/img/california-wildfires/webp/helicopter-1440.webp");
+  }
+}
+.article.campaign.beers .entry-header {
+  background-image: url("../assets/img/businesses/beer_header_thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.beers .entry-header {
+    background-image: url("../assets/img/businesses/beer_header.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.beers .entry-header {
+    background-image: url("../assets/img/businesses/beer_header.jpg");
+  }
+}
+.article.campaign.electric-cars .entry-header {
+  background-image: url("../assets/img/businesses/electric_cars_header_thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.electric-cars .entry-header {
+    background-image: url("../assets/img/businesses/electric_cars_header.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.electric-cars .entry-header {
+    background-image: url("../assets/img/businesses/electric_cars_header.jpg");
+  }
+}
+.article.campaign.sustainable-banks .entry-header {
+  background-image: url("../assets/img/businesses/sustainable_banks_header_thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.sustainable-banks .entry-header {
+    background-image: url("../assets/img/businesses/sustainable_banks_header.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.sustainable-banks .entry-header {
+    background-image: url("../assets/img/businesses/sustainable_banks_header.jpg");
+  }
+}
+.article.campaign.electricity .entry-header {
+  background-image: url("../assets/img/businesses/electricity/renewable-energy-wind-turbines-thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.electricity .entry-header {
+    background-image: url("../assets/img/businesses/electricity/renewable-energy-wind-turbines.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.electricity .entry-header {
+    background-image: url("../assets/img/businesses/electricity/renewable-energy-wind-turbines.jpg");
+  }
+}
+.article.campaign.broadband .entry-header {
+  background-image: url("../assets/img/businesses/broadband_header_thumb.jpg");
+}
+@media (min-width: 768px) {
+  .article.campaign.broadband .entry-header {
+    background-image: url("../assets/img/businesses/broadband_header.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign.broadband .entry-header {
+    background-image: url("../assets/img/businesses/broadband_header.jpg");
+  }
+}
+.article.campaign.about .entry-header {
+  background: black;
+}
+.article.campaign.about .entry-header h1 {
+  color: white;
+}
+.article.campaign.about .entry-header p {
+  color: white;
+}
+.article.campaign .country-selector p {
+  color: white;
+  display: inline-block;
+  margin: 0 1rem 0 0;
+}
+.article.campaign .country-selector div {
+  display: inline-block;
+}
+.article.campaign .methodology {
+  padding: var(--padding);
+}
+.article.campaign .entry-content .story section {
+  margin-bottom: var(--padding);
+}
+.article.campaign .entry-content .story section picture {
+  max-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.article.campaign .entry-content .story section picture img {
+  width: 100%;
+  bottom: var(--padding);
+}
+.article.campaign .entry-content .story section .l6 {
+  position: relative;
+}
+.article.campaign .entry-content .story section .l6 .text h2 time {
+  display: block;
+  font-size: 200%;
+  opacity: 0.4;
+}
+.article.campaign .entry-content .story section .l6 .text p:last-of-type {
+  margin-bottom: 0;
+}
+.article.campaign .entry-content .parallax {
+  position: relative;
+}
+.article.campaign .entry-content .parallax img {
+  position: absolute;
+  top: 0;
+}
+.article.campaign .entry-content .parallax img:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.article.campaign .entry-content .emm-cta header {
+  padding: var(--padding);
+}
+.article.campaign .news-sentiment table thead td {
+  font-size: 1.2rem;
+}
+
+.save-the-world-components header .c {
+  padding: var(--padding);
+}
+@media (min-width: 768px) {
+  .save-the-world-components header .c {
+    padding: var(--padding) 0;
+  }
+}
+.save-the-world-components section section {
+  padding: var(--padding);
+  background: rgba(0, 0, 0, 0.05);
+}
+.save-the-world-components section section .hero-level h3 {
+  margin-top: 0;
+  color: grey;
+}
+.save-the-world-components section section .hero-level h3 strong {
+  display: block;
+  color: black;
+}
+.save-the-world-components section section:nth-of-type(even) {
+  background: rgba(0, 0, 0, 0.1);
+}
+.save-the-world-components section section h4 {
+  margin: 0 0 1rem 0;
+}
+.save-the-world-components section section .meta {
+  margin: 2rem 0;
+  font-size: 1.6rem;
+}
+.save-the-world-components section section .meta li {
+  display: inline-block;
+  margin-right: 2rem;
+  padding-left: 2rem;
+  position: relative;
+}
+.save-the-world-components section section .meta li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: #050031;
+  margin-top: -0.4rem;
+  border-radius: 50%;
+}
+.save-the-world-components section section .cta a {
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+}
+
+.help {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -9999;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .article.campaign .entry-header {
+    min-height: 100vh;
+  }
+  .article.campaign .entry-header .logo {
+    position: absolute;
+    right: var(--padding);
+    bottom: var(--padding);
+    width: 50%;
+    z-index: 99;
+  }
+  .article.campaign .entry-header .logo img {
+    width: 100%;
+  }
+
+  .methodology div div:nth-child(odd) {
+    padding-right: 2rem;
+  }
+  .methodology div div:nth-child(even) {
+    padding-left: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .article.campaign .entry-content .story section {
+    padding: var(--padding);
+  }
+  .article.campaign .entry-content .story section .l6 .text {
+    padding-right: var(--padding);
+  }
+  .article.campaign .entry-content .story section.decade-2 .l6 .text, .article.campaign .entry-content .story section.decade-4 .l6 .text, .article.campaign .entry-content .story section.decade-6 .l6 .text, .article.campaign .entry-content .story section.decade-8 .l6 .text, .article.campaign .entry-content .story section.decade-10 .l6 .text {
+    padding-left: var(--padding);
+    padding-right: 0;
+  }
+}
+@media (min-width: 1024px) and (min-height: 800px) {
+  .article.campaign .entry-content .story section {
+    position: relative;
+    min-height: 100vh;
+  }
+  .article.campaign .entry-content .story section .text {
+    position: absolute;
+    bottom: var(--padding);
+  }
+  .article.campaign .entry-content .story section picture img {
+    position: absolute;
+  }
+}
+/* Mouse scroll animation */
+.mouse_scroll {
+  display: block;
+  width: 24px;
+  height: 100px;
+  margin-top: 125px;
+  position: relative;
+  z-index: 9;
+}
+
+.m_scroll_arrows {
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  border-right: 2px solid #050031;
+  border-bottom: 2px solid #050031;
+  margin: 0 0 3px 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.unu {
+  margin-top: 1px;
+}
+
+.unu,
+.doi,
+.trei {
+  -webkit-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+}
+
+.unu {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-direction: alternate;
+  animation-delay: 0.2s;
+  animation-direction: alternate;
+  margin-top: -6px;
+}
+
+.trei {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-direction: alternate;
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid #050031;
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: #050031;
+  position: relative;
+  height: 4px;
+  width: 4px;
+  border: 2px solid #050031;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+@-o-keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+@keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.entry-content .business-rankings section {
+  border-bottom: solid 1px #ddd;
+  padding-bottom: var(--padding);
+  margin-bottom: var(--padding);
+}
+.entry-content .business-rankings section h2 span {
+  display: block;
+  font-size: 50%;
+  text-transform: uppercase;
+}
+.entry-content .business-rankings section .key-facts {
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  list-style: none;
+  font-weight: bold;
+}
+.entry-content .business-rankings section .key-facts li {
+  margin: 0 0 2rem 0;
+}
+.entry-content .business-rankings section .key-facts li small {
+  display: block;
+  font-size: 60%;
+  opacity: 70%;
+  font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  .entry-content .business-rankings .key-facts {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 1366px) {
+  .entry-content .business-rankings .key-facts {
+    font-size: 6rem;
+  }
+}
+.product-tables section {
+  border-bottom: solid 1px #000;
+  padding-bottom: var(--padding-small);
+}
+.product-tables section img {
+  width: 100%;
+}
+.product-tables section table {
+  width: 100%;
+  background: #050031;
+}
+.product-tables section table td {
+  padding: 1rem;
+  color: white;
+}
+.product-tables section table thead td {
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1);
+}
+.product-tables section table.electric-cars tbody td.miles:after {
+  content: " miles";
+}
+.product-tables section table.electric-cars tbody td.pounds:before {
+  content: "£";
+}
+.product-tables section table.electric-cars tbody td.dollars:before {
+  content: "$";
+}
+@media (min-width: 1024px) {
+  .product-tables section img {
+    width: 350px;
+  }
+  .product-tables section table {
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 1366px) {
+  .product-tables section img {
+    width: 500px;
+  }
+  .product-tables section table {
+    font-size: 2.4rem;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,64 @@
+.product-tables {
+    section {
+        border-bottom: solid 1px $line-dark;
+        padding-bottom: var(--padding-small);
+
+        img {
+            width: 100%
+        }
+        table {
+            width: 100%;
+            background: $primary;
+
+            td {
+                padding: 1rem;
+                color: white;
+            }
+            thead td {
+                font-weight: bold;
+                background: rgba(255,255,255,0.1);
+            }
+            &.electric-cars {
+                tbody {
+                    td {
+                        &.miles {
+                            &:after {
+                                content: ' miles';
+                            }
+                        }
+                    }
+                    td {
+                        &.pounds {
+                            &:before {
+                                content: '£';
+                            }
+                        }
+                    }
+                    td {
+                        &.dollars {
+                            &:before {
+                                content: '$';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media (min-width: $laptop) {
+            img {
+                width: 350px;
+            }
+            table {
+                font-size: 2.1rem;
+            }
+        }
+        @media (min-width: $desktop) {
+            img {
+                width: 500px;
+            }
+            table {
+                font-size: 2.4rem;
+            }
+        }
+    } 
+}

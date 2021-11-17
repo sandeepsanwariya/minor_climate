@@ -1,0 +1,96 @@
+.kpis {
+
+    ul {
+        @include grid-x;
+
+        li {
+            @include cell;
+            @include tablet-6;
+            @include laptop-4;
+            padding: 1rem;
+            
+            div {
+                @include padding;
+                font-weight: bold;
+                font-size: 2.1rem;
+                background: $data-bg;
+                color: $primary;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+                b {
+                    font-size: 180%;
+                }   
+                i {
+                    margin-top: 2rem;
+                }
+                i, small {
+                    font-size: 75%;
+                    display: block;
+                    opacity: 0.6;
+                }
+                small {
+                    margin: 0;
+                }
+                &.number {
+
+                    b {
+                        font-size: 300%;
+                    }
+                }
+            }
+            &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+
+                small {
+                    margin-top: 2.7rem;
+                }
+            }
+        }
+    }       
+}
+.timeline {
+    @include timeline;
+}
+.attribute-nav {
+    @include attribute-nav;
+}
+.statement {
+    padding: $global-padding;
+    height: 100vh;
+
+    blockquote {
+        background: $data-bg;
+        padding: 10vh $global-padding;
+        text-align: center;
+        margin: 0;
+
+        p {
+            font-size: 2.1rem;
+            line-height: 1.05;
+            letter-spacing: -0.15rem;
+            width: 640px;
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        @media (min-width: $tablet) {
+            p {
+                font-size: 3rem;
+            }
+        }
+        @media (min-width: $laptop) {
+            p {
+                font-size: 4rem;
+            }
+        }
+        @media (min-width: $desktop) {
+            p {
+                font-size: 5rem;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,112 @@
+// colours
+$data-bg: rgba(0, 0, 0, 0.05);
+$data-bg2: rgba(0, 0, 0, 0.1);
+$chartbg: #050031;
+$chartbg2: #020111;
+$line: #ddd;
+$line-med: #999;
+$line-dark: #000;
+$text: #050031;
+$light-text: white;
+$input-bg: white;
+$input-detail: #050031;
+$primary: #050031;
+$primary-color: #050031;
+$primary-lighter: #191066;
+
+// media queries
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1366px;
+$desktop-xl: 1920px;
+
+// spacing
+$global-width: 1260px;
+$global-padding: 1rem;
+$global-padding-xl: 2rem;
+$global-padding-xxl: 3rem;
+$global-margin: 1rem;
+$text-margin: 2.4rem;
+$line-height: 1.5;
+
+// Padding/Margin in different screen sizes
+$gutter: 0rem;
+$gutter-xl: 0.5rem;
+$gutter-xxl: 1rem;
+
+// Global Grid Padding Adjustment
+:root {
+  --grid-adjust: -1rem;
+}
+@media (min-width: $laptop) {
+  :root {
+    --grid-adjust: -2rem;
+  }
+}
+@media (min-width: $desktop) {
+  :root {
+    --grid-adjust: -3rem;
+  }
+}
+@media (min-width: $desktop-xl) {
+  :root {
+    --grid-adjust: -4rem;
+  }
+}
+// Global Padding Small
+:root {
+  --padding-small: 1rem;
+}
+@media (min-width: $laptop) {
+  :root {
+    --padding-small: 2rem;
+  }
+}
+@media (min-width: $desktop) {
+  :root {
+    --padding-small: 3rem;
+  }
+}
+@media (min-width: $desktop-xl) {
+  :root {
+    --padding-small: 4rem;
+  }
+}
+// Global Padding
+:root {
+  --padding: 2rem;
+}
+@media (min-width: $laptop) {
+  :root {
+    --padding: 3rem;
+  }
+}
+@media (min-width: $desktop) {
+  :root {
+    --padding: 4rem;
+  }
+}
+@media (min-width: $desktop-xl) {
+  :root {
+    --padding: 5rem;
+  }
+}
+// Global Padding Large
+:root {
+  --padding-large: 4rem;
+}
+@media (min-width: $laptop) {
+  :root {
+    --padding-large: 6rem;
+  }
+}
+@media (min-width: $desktop) {
+  :root {
+    --padding-large: 8rem;
+  }
+}
+@media (min-width: $desktop-xl) {
+  :root {
+    --padding-large: 10rem;
+  }
+}
