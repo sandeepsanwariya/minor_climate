@@ -1,6 +1,6 @@
 import React from "react";
 import SaveTheWorldClimateChange from "../SaveTheWorldClimateChange";
-import {motion} from  'framer-motion'
+
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 const SustainableBanks = () => {
@@ -10,12 +10,7 @@ const SustainableBanks = () => {
 
   }, [])
   return (
-    <motion.div
-    initial={{x:"-100vw",y:'0vh', opacity:0.0}} 
-    animate={{x:"0vw",y:"0vh", opacity:1}}
-    exit={{opacity:0}}
-    transition={{type:"spring",stiffness:'120'}}
-    >
+    
     <main className="article campaign sustainable-banks">
       <header className="entry-header high-impact-viewport x">
         <div className="c l6 text">
@@ -338,7 +333,7 @@ const SustainableBanks = () => {
       <div className="save-the-world-components">
         <SaveTheWorldClimateChange />
       </div>
-    </main></motion.div>
+    </main>
   );
 };
 

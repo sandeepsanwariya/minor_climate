@@ -22,7 +22,6 @@ import LazyLoad from "react-lazyload";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import {motion} from  'framer-motion'
 const CaliforniaWildfires = () => {
   const { path, url } = useRouteMatch();
   const [buttonPopup, setButtonPopup] = React.useState(false);
@@ -31,12 +30,7 @@ const CaliforniaWildfires = () => {
     window.scrollTo(0, 0);
   }, [])
   return (
-    <motion.div
-    initial={{x:"50vw",y:'0vh', opacity:0}} 
-    animate={{x:"0vw",y:"0vh", opacity:1}}
-    exit={{opacity:0}}
-    transition={{ type:"spring",stiffness:'120'}}
-    >
+  
     <main className="article campaign california-wildfires">
       <header className="entry-header high-impact-viewport x">
         <div className="text c l6">
@@ -180,7 +174,7 @@ const CaliforniaWildfires = () => {
       </section>
       <SaveTheWorldClimateChange />
 
-    </main></motion.div>
+    </main>
   );
 };
 

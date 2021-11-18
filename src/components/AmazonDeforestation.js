@@ -12,7 +12,7 @@ import {
 } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import LazyLoad from "react-lazyload";
-import {motion} from  'framer-motion'
+
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -25,12 +25,7 @@ React.useEffect(() => {
   window.scrollTo(0, 0);
 }, [])
 return (
-  <motion.div
-  initial={{x:"50vw",y:'0vh', opacity:0}} 
-    animate={{x:"0vw",y:"0vh", opacity:1}}
-    exit={{opacity:0}}
-    transition={{ type:"spring",stiffness:'120'}}
-  >
+
     <main data-aos="fade-up-left" className="article campaign amazon-deforestation">
       <header data-aos="fade-up-left" className="entry-header high-impact-viewport x">
         <div data-aos="fade-up" className="text c l6">
@@ -134,7 +129,7 @@ return (
           
         </div>
       </section>
-    </main></motion.div>
+    </main>
   );
 };
 

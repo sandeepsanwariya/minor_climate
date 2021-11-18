@@ -3,7 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import SaveTheWorldClimateChange from "../SaveTheWorldClimateChange";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import {motion} from  'framer-motion'
+
 const BusinessRankings = () => {
   React.useEffect(() => {
     Aos.init({duration:1500});
@@ -11,12 +11,7 @@ const BusinessRankings = () => {
 
   }, [])
   return (
-    <motion.div
-    initial={{x:"50vw",y:'0vh', opacity:0.0}} 
-    animate={{x:"0vw",y:"0vh", opacity:1}}
-    exit={{opacity:0}}
-    transition={{type:"spring",stiffness:'120'}}
-    >
+    
     <main className="category">
       <header className="category-header">
         <div data-aos="fade-up" class="grid">
@@ -141,7 +136,7 @@ const BusinessRankings = () => {
       </ul>
       <SaveTheWorldClimateChange />
     </main>
-    </motion.div>
+ 
   );
 };
 

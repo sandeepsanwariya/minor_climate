@@ -24,7 +24,7 @@ import {
   TwitterShareButton,
 } from "react-share";
 
-import {motion} from  'framer-motion'
+
 const ClimateChange = () => {
   // const { path, url } = useRouteMatch();
   React.useEffect(() => {
@@ -33,12 +33,7 @@ const ClimateChange = () => {
   }, [])
   const [buttonPopup, setButtonPopup] = useState(false);
   return (
-    <motion.div
-    initial={{x:"-50vw",y:'0vh', opacity:0}} 
-    animate={{x:"0vw",y:"0vh", opacity:1}}
-    exit={{opacity:0}}
-    transition={{ type:"spring",stiffness:'120'}}
-    >
+  
     <main className="article campaign climate-change">
       <header className="entry-header high-impact-viewport x">
         <div className="text c l6" data-aos="fade-up">
@@ -324,7 +319,7 @@ const ClimateChange = () => {
           </section>
         </div>
       </div>
-    </main></motion.div>
+    </main>
   );
 };
 
