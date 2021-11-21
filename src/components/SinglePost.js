@@ -1,6 +1,6 @@
 import React from "react";
 import SaveTheWorldClimateChange from "./SaveTheWorldClimateChange";
-
+import {motion} from  'framer-motion'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 const SinglePost = () => {
@@ -8,7 +8,12 @@ const SinglePost = () => {
     Aos.init({duration:1500});
   }, [])
   return (
-   
+    <motion.div
+    initial={{x:"50vw",y:'00vh', opacity:0.0}} 
+    animate={{x:"0vw",y:"0vh", opacity:1}}
+    exit={{opacity:0}}
+    transition={{type:"spring",stiffness:'120'}}
+    >
     <main className="article about feature-article">
       <header className="entry-header">
         <div data-aos="fade-up" class="grid">
@@ -78,7 +83,7 @@ const SinglePost = () => {
       <div className="save-the-world-components">
         <SaveTheWorldClimateChange data-aos="fade-up" />
       </div>
-    </main>
+    </main></motion.div>
   );
 };
 

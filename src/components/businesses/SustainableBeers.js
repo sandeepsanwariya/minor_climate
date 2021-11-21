@@ -1,7 +1,7 @@
 import React from 'react';
 import SaveTheWorldClimateChange from '../SaveTheWorldClimateChange';
 import { HashLink } from 'react-router-hash-link';
-
+import {motion} from  'framer-motion'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 const SustainableBeers = () => {
@@ -11,7 +11,12 @@ const SustainableBeers = () => {
 
   }, [])
   return (
-   
+    <motion.div
+    initial={{x:"100vw",y:'0vh', opacity:0.0}} 
+    animate={{x:"0vw",y:"0vh", opacity:1}}
+    exit={{opacity:0}}
+    transition={{type:"spring",stiffness:'120'}}
+    >
     <main className='article campaign beers feature-article'>
       <header className='entry-header high-impact-viewport x'>
         <div className='text c l6'>
@@ -417,7 +422,7 @@ const SustainableBeers = () => {
       <div className='save-the-world-components'>
         <SaveTheWorldClimateChange />
       </div>
-    </main>
+    </main></motion.div>
   );
 };
 

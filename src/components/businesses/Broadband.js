@@ -2,14 +2,19 @@ import React from "react";
 import SaveTheWorldClimateChange from "../SaveTheWorldClimateChange";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-
+import {motion} from  'framer-motion'
 const Broadband = () => {
   React.useEffect(() => {
     Aos.init({duration:1500});
     window.scrollTo(0, 0);
   }, [])
   return (
-    
+    <motion.div
+    initial={{x:"10vw",y:'100vh', opacity:0.0}} 
+    animate={{x:"0vw",y:"0vh", opacity:1}}
+    exit={{opacity:0}}
+    transition={{type:"spring",stiffness:'120'}}
+    >
     <main className="article campaign broadband">
       <header data-aos="fade-up" className="entry-header high-impact-viewport x">
             <div className="text c l6">
@@ -368,7 +373,7 @@ const Broadband = () => {
       <div className="save-the-world-components">
         <SaveTheWorldClimateChange />
       </div>
-    </main>
+    </main></motion.div>
   );
 };
 

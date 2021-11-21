@@ -1,9 +1,14 @@
 import React from "react";
-
+import {motion} from  'framer-motion'
 class About extends React.Component {
   render() {
     return (
-    
+      <motion.div
+    initial={{x:"10vw",y:'100vh', opacity:0.0}} 
+    animate={{x:"0vw",y:"0vh", opacity:1}}
+    exit={{opacity:0}}
+    transition={{type:"spring",stiffness:'120'}}
+    >
       <main className="grid article single">
         <article className="x">
           <div className="c l7">
@@ -36,7 +41,7 @@ class About extends React.Component {
             </div>
           </div>
         </article>
-      </main>
+      </main></motion.div>
     );
   }
 }

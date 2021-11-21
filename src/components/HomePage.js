@@ -2,14 +2,19 @@ import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-
+import {motion} from  'framer-motion'
 export default function HomePage() {
   React.useEffect(() => {
     Aos.init({duration:1500});
     window.scrollTo(0, 0);
   }, [])
   return (
-   
+    <motion.div
+    initial={{x:"0vw",y:'50vh', opacity:0}} 
+    animate={{x:"0vw",y:"0vh", opacity:1}}
+    exit={{x:"0vw",y:"0vh",opacity:0}}
+    transition={{ type:"spring",stiffness:'120'}}
+    >
     <main className="home ">
      
       <div className="high-impact-viewport grid-full single-feature top-feature">
@@ -136,7 +141,7 @@ export default function HomePage() {
           />
         </section>
       </div>
-    </main>
+    </main></motion.div>
   );
 }
 
